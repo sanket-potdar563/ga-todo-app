@@ -15,7 +15,7 @@ const TodoApp = () => {
   const handleSubmit = async () => {
     let resp = await axios.post("http://localhost:4004/todos", {
       value: value,
-      isCompleted: false,
+      isCompleted: false
     });
     setTodos([...todos, resp.data]);
     setValue("");
@@ -28,7 +28,7 @@ const TodoApp = () => {
   }, []);
   return (
     <div>
-      <h3>TodoApp</h3>
+      <h3>Todo App Deployment</h3>
       <TodoInput
         value={value}
         handleChange={handleChange}
