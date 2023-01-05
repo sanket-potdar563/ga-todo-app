@@ -3,6 +3,9 @@ name: GitHub Action No. 1
 on:
   push:
     branches: ["main"]
+  # Allows us to run work from GitHub UI
+  workflow_dispatch:
+
 permissions:
   contents: read
   pages: write
